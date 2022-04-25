@@ -1,0 +1,10 @@
+h1 {
+    color: orange;
+    font-size: 3em;
+    text-decoration: blue double underline;
+    }
+body {
+	background: white
+url("images/background.gif") no-repeat;
+}
+

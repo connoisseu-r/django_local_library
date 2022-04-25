@@ -1,0 +1,25 @@
+<!DOCETYPE html>
+<html>
+  <head>
+    <meta CharSet="UTF-8">
+    <title>Blog</title>
+    <meta CharSet="UTF-8">
+    <meta name="description" content="blogpost">
+    <meta name="author" content="roland">
+  </head>
+  <body>
+    <h1>Here is our new post</h1>
+    <ul>
+      {% for post in posts %}
+        <li>{{ post.title }}</li>
+        <p>{{ post.text }}</p>
+
+        <p>{{ post.date_added|date:'M d, Y H:i' }}</p>
+      {% empty %}
+        <li>No posts have been added yet.</li>
+      {% endfor %}
+    </ul>
+
+{% block content %}{% endblock content %}
+  </body>
+</html>
